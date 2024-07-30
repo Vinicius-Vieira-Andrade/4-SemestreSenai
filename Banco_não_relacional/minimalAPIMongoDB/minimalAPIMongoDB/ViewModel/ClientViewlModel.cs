@@ -1,9 +1,11 @@
-﻿using MongoDB.Bson;
+﻿using minimalAPIMongoDB.Domains;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+using System.Text.Json.Serialization;
 
-namespace minimalAPIMongoDB.Domains
+namespace minimalAPIMongoDB.ViewModel
 {
-    public class Client
+    public class ClientViewlModel
     {
         [BsonId]
         [BsonElement("_id"), BsonRepresentation(BsonType.ObjectId)]
@@ -21,11 +23,13 @@ namespace minimalAPIMongoDB.Domains
         [BsonElement("userID")]
         public string? UserId { get; set; }
 
+        [BsonIgnore]
+        [JsonIgnore]
         public User? User { get; set; }
 
         public Dictionary<string, string> AdditionalAttributes { get; set; }
 
-        public Client()
+        public ClientViewlModel()
         {
             AdditionalAttributes = new Dictionary<string, string>();
         }

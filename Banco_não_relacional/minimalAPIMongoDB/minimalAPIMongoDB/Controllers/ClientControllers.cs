@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using minimalAPIMongoDB.Domains;
 using minimalAPIMongoDB.Services;
+using minimalAPIMongoDB.ViewModel;
 using MongoDB.Driver;
 
 namespace minimalAPIMongoDB.Controllers
@@ -12,9 +13,11 @@ namespace minimalAPIMongoDB.Controllers
     public class ClientControllers : ControllerBase
     {
         private readonly IMongoCollection<Client> _client;
+        private readonly IMongoCollection<User> _user;
         public ClientControllers(MongoDbService mongoDbService)
         {
             _client = mongoDbService.GetDatabase.GetCollection<Client> ("client");
+            _user = mongoDbService.GetDatabase.GetCollection<User> ("user");
         }
 
         [HttpGet]
@@ -33,12 +36,30 @@ namespace minimalAPIMongoDB.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(Client c)
+        public async Task<ActionResult> Post(ClientViewlModel c)
         {
             try
             {
-                await _client.InsertOneAsync(c);
-                return StatusCode(200, c);
+                Client client = new Client();
+                client.Id = c.Id;
+                client.Address = c.Address;
+                client.Cpf = c.Cpf;
+                client.Phone = c.Phone;
+                client.UserId = c.UserId;
+
+                var user = await _user.Find(x => x.Id == client.UserId).FirstOrDefaultAsync();
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                client.User = user;
+
+                await _client.InsertOneAsync(client);
+
+                return Ok(client);
+                //await _client.InsertOneAsync(c);
+                //return StatusCode(200, c);
             }
             catch (Exception e)
             {
@@ -81,12 +102,12 @@ namespace minimalAPIMongoDB.Controllers
             }
         }
 
-        [HttpDelete]
-        public async Task<ActionResult> Delete(Client c)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(string id)
         {
             try
             {
-                var filter = Builders<Client>.Filter.Eq(x => x.Id, c.Id);
+                var filter = Builders<Client>.Filter.Eq(x => x.Id, id);
 
                 if (filter != null)
                 {
