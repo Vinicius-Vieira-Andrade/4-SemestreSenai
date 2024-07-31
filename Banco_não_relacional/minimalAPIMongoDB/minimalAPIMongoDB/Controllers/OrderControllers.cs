@@ -28,7 +28,53 @@ namespace minimalAPIMongoDB.Controllers
             try
             {
                 var order = await _order.Find(FilterDefinition<Order>.Empty).ToListAsync();
+
+                foreach (var item in order)
+                {
+                    if (item.IdProduct != null)
+                    {
+                        // filtra pelos ids de produtos que existem dentro do banco
+                        var filter = Builders<Product>.Filter.In(p => p.Id, item.IdProduct);
+                       item.Product = await _product.Find(filter).ToListAsync();
+                    }
+
+
+                    if (item.IdClient != null)
+                    {
+                        item.Client = await _client.Find(c => c.Id == item.IdClient).FirstOrDefaultAsync();
+                    }
+                }
+
                 return Ok(order);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("id")]
+        public async Task<ActionResult> GetId(string id)
+        {
+            try
+            {
+                var order = await _order.Find(x => x.Id == id).FirstOrDefaultAsync();
+
+                if (order != null)
+                {
+                    var client = await _client.Find(x => x.Id == order.IdClient).FirstOrDefaultAsync();
+                    if (client != null)
+                    {
+                        order.Client = client;
+                    }
+
+                    var product = await _product.Find(x => x.Id == order.IdProduct).FirstOrDefaultAsync();
+                }
+
+
+
+
+                return order is not null ? Ok(order) : NotFound();
             }
             catch (Exception e)
             {
@@ -54,24 +100,10 @@ namespace minimalAPIMongoDB.Controllers
                     return NotFound("Cliente não encontrado");
                 }
 
-                order.Client = client;
+                //order.Client = client;
 
                 await _order.InsertOneAsync(order);
                 return Ok(order);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
-
-        [HttpGet("id")]
-        public async Task<ActionResult> GetId(string id)
-        {
-            try
-            {
-                var order = await _order.Find(x => x.Id == id).FirstOrDefaultAsync();
-                return order is not null ? Ok(order) : NotFound();
             }
             catch (Exception e)
             {
