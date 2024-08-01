@@ -1,0 +1,318 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\TesteConversao\\TesteConversao.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Conversao\\Conversao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Conversao\\Conversao.csproj",
+        "projectName": "Conversao",
+        "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Conversao\\Conversao.csproj",
+        "packagesPath": "C:\\Users\\53685550837\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Conversao\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\53685550837\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Inventario\\Inventario.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Inventario\\Inventario.csproj",
+        "projectName": "Inventario",
+        "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Inventario\\Inventario.csproj",
+        "packagesPath": "C:\\Users\\53685550837\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Inventario\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\53685550837\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Livros\\Livros.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Livros\\Livros.csproj",
+        "projectName": "Livros",
+        "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Livros\\Livros.csproj",
+        "packagesPath": "C:\\Users\\53685550837\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Livros\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\53685550837\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\TesteConversao\\TesteConversao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\TesteConversao\\TesteConversao.csproj",
+        "projectName": "TesteConversao",
+        "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\TesteConversao\\TesteConversao.csproj",
+        "packagesPath": "C:\\Users\\53685550837\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\TesteConversao\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\53685550837\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Conversao\\Conversao.csproj": {
+                "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Conversao\\Conversao.csproj"
+              },
+              "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Inventario\\Inventario.csproj": {
+                "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Inventario\\Inventario.csproj"
+              },
+              "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Livros\\Livros.csproj": {
+                "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\Livros\\Livros.csproj"
+              },
+              "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\ValidarEmail\\ValidarEmail.csproj": {
+                "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\ValidarEmail\\ValidarEmail.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\ValidarEmail\\ValidarEmail.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\ValidarEmail\\ValidarEmail.csproj",
+        "projectName": "ValidarEmail",
+        "projectPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\ValidarEmail\\ValidarEmail.csproj",
+        "packagesPath": "C:\\Users\\53685550837\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53685550837\\Desktop\\4-SemestreSenai\\sprint 2\\Exercicios\\ValidarEmail\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\53685550837\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
