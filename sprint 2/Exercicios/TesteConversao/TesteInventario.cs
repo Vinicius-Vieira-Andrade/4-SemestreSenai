@@ -14,14 +14,14 @@ namespace TesteConversao
         {
             // Arrange
             var inventario = new ProdutoInventario();
-            string nomeProduto = "Arroz";
-            int quantidade = 10;
+            string nomeProduto = "Uva";
+            int quantidade = 12;
 
             // Act
             inventario.AdicionarProduto(nomeProduto, quantidade);
 
             // Assert
-            int quantidadeEsperada = 10;
+            int quantidadeEsperada = 12;
             int quantidadeAtual = inventario.ObterQuantProduto(nomeProduto);
             Assert.Equal(quantidadeEsperada, quantidadeAtual);
         }
