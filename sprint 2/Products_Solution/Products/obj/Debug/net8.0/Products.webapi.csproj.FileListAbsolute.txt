@@ -138,3 +138,5 @@ C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 2\Products_Solution\Products
 C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 2\Products_Solution\Products\obj\Debug\net8.0\Products.webapi.pdb
 C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 2\Products_Solution\Products\obj\Debug\net8.0\Products.webapi.genruntimeconfig.cache
 C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 2\Products_Solution\Products\obj\Debug\net8.0\ref\Products.webapi.dll
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 2\Products_Solution\Products\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 2\Products_Solution\Products\bin\Debug\net8.0\Moq.dll
