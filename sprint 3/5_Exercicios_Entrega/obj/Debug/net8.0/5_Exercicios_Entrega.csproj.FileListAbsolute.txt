@@ -1,0 +1,15 @@
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\bin\Debug\net8.0\5_Exercicios_Entrega.exe
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\bin\Debug\net8.0\5_Exercicios_Entrega.deps.json
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\bin\Debug\net8.0\5_Exercicios_Entrega.runtimeconfig.json
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\bin\Debug\net8.0\5_Exercicios_Entrega.dll
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\bin\Debug\net8.0\5_Exercicios_Entrega.pdb
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.AssemblyInfoInputs.cache
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.AssemblyInfo.cs
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.csproj.CoreCompileInputs.cache
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.sourcelink.json
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.dll
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\refint\5_Exercicios_Entrega.dll
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.pdb
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\5_Exercicios_Entrega.genruntimeconfig.cache
+C:\Users\53685550837\Desktop\4-SemestreSenai\sprint 3\5_Exercicios_Entrega\obj\Debug\net8.0\ref\5_Exercicios_Entrega.dll
