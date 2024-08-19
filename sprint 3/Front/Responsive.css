@@ -1,0 +1,100 @@
+@media screen and (max-width: 640px) {
+
+  body {
+    font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+}
+
+.header-flex {
+    flex-direction: column; /* Coloca todos os elementos da header uma abaixo da outra */
+}
+
+.links {
+    width: 60%; /* Fazendo com que os links ocupem toda a largura disponível */
+    justify-content: space-evenly;
+}
+
+.text-header {
+    margin-top: 20px;
+}
+
+.text-flex {
+    flex-direction: column; /* Coloca o texto e a imagem uma abaixo da outra */
+}
+
+.text-flex img {
+    align-self: center;
+    width: 350px;
+    height: 350px;
+}
+
+.modal {
+    width: 90%; /* Ajusta a largura do modal para caber melhor nas telas menores */
+    height: auto; /* Ajusta automaticamente a altura */
+}
+
+.modal input:first-of-type {
+    font-size: 10px;
+}
+
+.modal img {
+    display: none;
+}
+.button-search {
+    display: none;
+}
+
+#search-button {
+    display: block;
+    cursor: pointer;
+}
+
+.flex-cards {
+    flex-wrap: wrap; /* Permite que as cartas sejam dispostas em várias linhas */
+}
+
+.grid-card {
+    flex-direction: column; /* Disposição vertical das cartas */
+    
+}
+
+.flex-dualcard {
+    flex-direction: row; /* Ajusta a disposição dos artigos dentro das cartas */
+    flex-wrap: wrap;
+}
+
+.links a {
+    font-size: 14px; /* Diminui o tamanho da fonte dos links */
+}
+
+.button-register {
+    width: 120px; /* Ajusta o tamanho do botão de registro */
+    height: 30px; /* Ajusta a altura do botão de registro */
+}
+
+.modal button {
+    width: 130px; /* Ajusta o tamanho do botão de pesquisa */
+    height: 40px; /* Ajusta a altura do botão de pesquisa */
+}
+
+.modal div {
+    padding-right: 35px;
+}
+
+#travel {
+    width: 230px;
+    height: 230px;
+}
+
+.flex-main-text {
+    margin-bottom: 40px;
+}
+
+.flex-main-text h1 {
+    font-size: 20px; /* Ajusta o tamanho da fonte do título principal */
+}
+
+.flex-main-text p {
+    font-size: 15px; /* Ajusta o tamanho da fonte do parágrafo */
+}
+   
+}

@@ -1,0 +1,389 @@
+@font-face {
+    font-family: lato;
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: latobold;
+    src: url(./assets/fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: interbold;
+    src: url(./assets/fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'osvaldo';
+    src: url(./assets/fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(276deg, rgba(9, 9, 121, 1) 0%, rgba(30, 82, 180, 1) 100%, rgba(0, 39, 119, 1) 100%);
+    height: 100%;
+    width: 100%;
+}
+
+#hospedagens-branco {
+    width: 156px;
+    height: 23px;
+}
+
+.header-flex {
+    width: 90%;
+    padding-top: 20px;
+    margin: 0 auto;
+    /* border: red; */
+}
+
+#menu {
+    display: none;
+}
+
+.links a {
+    color: white;
+    font-family: "lato";
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: #5F5C6B;
+    transition: 0.15s;
+}
+
+.button-register {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    width: 151px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "lato";
+    font-weight: 500;
+}
+
+.button-register:hover {
+    background-color: #FFDF00;
+    border: none;
+    color: #2E2636;
+    transition: 0.3s;
+}
+
+.links-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border-color: red; */
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.text-flex {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 105px;
+}
+
+.text-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "latobold";
+    color: white;
+}
+
+.text-header p {
+    font-family: 'lato';
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.modal {
+    position: relative;
+    top: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.modal input:first-of-type {
+    color: #5F5C6B;
+    border: none;
+    font-size: 16px;
+    font-family: 'lato';
+    font-weight: 500;
+}
+
+.modal input:first-of-type:focus {
+    outline: none;
+}
+
+.modal input {
+
+}
+
+
+.modal div {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    gap: 10px;
+    border-right: #4E4B59 2px;
+    border-right-style: dashed;
+    /* padding-right: 70px; */
+}
+
+.modal div img {
+    height: 16px;
+    width: 12px;
+}
+
+.modal .button-search {
+    height: 45px;
+    width: 160px;
+    background-color: #009C3B;
+    border-radius: 8px;
+    border: 2px solid #f2f2f2;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'lato';
+    font-weight: 500;
+}
+
+.modal .button-search:hover {
+    background-color: #FFDF00;
+    color: #5F5C6B;
+    transition: 0.3s;
+}
+
+#search-button {
+    display: none;
+}
+
+
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+.flex-cards {
+    display: flex;
+    /* margin-top: 80px; */
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.grid-card {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+
+.flex-dualcard {
+    gap: 45px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-cards article {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    gap: 10px;
+    /* border: solid 1px red; */
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.flex-cards article img {
+    max-width: 100%;
+}
+
+.flex-cards article:hover {
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    transform: scale(1.1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+.flex-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-title h1 {
+    font-size: 16px;
+    color: #2E2636;
+    font-weight: 600;
+    font-family: 'lato';
+}
+
+.flex-cards p {
+    color: #33303E;
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.state { 
+    color: #FFDF00 !important;
+    font-family: 'osvaldo' !important;
+    font-size: 16px !important; 
+    font-weight: 600 !important;
+}
+
+.flex-cards img {
+    height: 173px;
+    width: 260px;
+    border-radius: 8px;
+}
+
+.flex-main {
+    margin-top: 150px;
+}
+
+.grid-main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.flex-main-text h1 {
+    font-size: 28px;
+    font-family: 'latobold';
+    font-weight: 800;
+    color: #2E2636;
+}
+
+.flex-main-text p {
+    font-size: 20px;
+    color: #2E2636;
+    font-family: 'lato';
+    font-weight: 500;
+}
+
+#hotel {
+    color: #002777;
+}
+
+#promotion {
+    color: #019438;
+}
+
+#no-time {
+    color: #019438;
+}
+
+#best {
+    color: #FFDF00;
+}
+
+.grid-main-final {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.flex-main-final {
+    background-image: url(assets/bubbles-bg.png), url(assets/bubbles-invertida.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px, 300px;
+    background-position: left, right;
+    display: flex;
+    background-color: #009C3B;
+    width: 100%;
+    height: 163px;
+}
+
+.flex-main-final h2 {
+    font-size: 24px;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'inter';
+    font-weight: 500;
+}
+
+.flex-main-final p {
+    font-size: 16px;
+    font-family: 'lato';
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+.p-flex {
+    text-align: center;
+    line-height: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-footer {
+    background-color: #FFDF00;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}

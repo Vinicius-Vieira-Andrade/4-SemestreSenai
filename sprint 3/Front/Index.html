@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospedagens</title>
+    <link rel="stylesheet" href="/Style.css" />
+    <link rel="stylesheet" href="/Responsive.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-flex">
+        <div class="links-flex">
+          <img
+            id="hospedagens-branco"
+            src="/assets/logo-branca.png"
+            alt="Imagem da logo 'Hospedagens.com' na cor branca"
+          />
+
+          <!-- <img
+            id="menu"
+            onclick="mostrarMenu()"
+            src="./assets/Vectorvectorham.svg"
+            alt="menu hamburguer para exibir funcionalidades"
+          /> -->
+          <nav class="links">
+            <a href="">Hóteis</a>
+            <a href="">Contato</a>
+            <a href="">Entrar</a>
+            <button class="button-register">Cadastrar-se</button>
+          </nav>
+        </div>
+
+        <div class="text-flex">
+          <div class="text-header">
+            <h1>As melhores hospedagens do Brasil</h1>
+            <p>
+              mais de 500 mil reservas esperando por você! Basta <br />
+              procurar pelo local ideal, e realizar a viagem dos seus <br />
+              sonhos
+            </p>
+          </div>
+
+          <img
+            id="map"
+            src="/assets/mapa-brasil.png"
+            alt="Imagem ilustrativa do mapa do Brasil"
+          />
+        </div>
+        <div class="modal">
+          <div>
+            <img src="assets/icons/local-icon.svg" alt="" />
+            <input type="text" placeholder="Qual o local desejado?" />
+          </div>
+          <div>
+            <img src="assets/icons/checkin-icon.svg" alt="" />
+            <input
+              id="checkin"
+              type="text"
+              placeholder="Data check in"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+          </div>
+          <div>
+            <img src="assets/icons/checkout-icon.svg" alt="" />
+            <input
+              id="checkout"
+              type="text"
+              placeholder="Data check out"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+          </div>
+          <img id="search-button" src="assets/ic_baseline-searchsearch.svg" alt="">
+          <button class="button-search">Procurar hotel</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="flex-cards">
+        <div class="grid-card">
+          <div class="flex-dualcard">
+            <article>
+              <img src="assets/hotel1.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Angra dos reis</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Desfrute de um paraíso tropical em nossa pousada! Relaxe em
+                nossas piscinas com vista para o mar.
+              </p>
+            </article>
+            <article>
+              <img src="assets/hotel1.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Angra dos reis</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Desfrute de um paraíso tropical em nossa pousada! Relaxe em
+                nossas piscinas com vista para o mar.
+              </p>
+            </article>
+          </div>
+          <div class="flex-dualcard">
+            <article>
+              <img src="assets/hotel2.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Arraial do cabo</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está
+                localizada próximo às praias.
+              </p>
+            </article>
+            <article>
+              <img src="assets/hotel2.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Arraial do cabo</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está
+                localizada próximo às praias.
+              </p>
+            </article>
+          </div>
+          <div class="flex-dualcard">
+            <article>
+              <img src="assets/hotel1.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Treze Tílias</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Viva a experiência de um vilarejo europeu no Brasil! Nossa
+                pousada em Treze Tílias é perfeita.
+              </p>
+            </article>
+            <article>
+              <img src="assets/hotel1.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Treze Tílias</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Viva a experiência de um vilarejo europeu no Brasil! Nossa
+                pousada em Treze Tílias é perfeita.
+              </p>
+            </article>
+          </div>
+          <div class="flex-dualcard">
+            <article>
+              <img src="assets/hotel2.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Ipanema</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Explore a rica cultura e história de Ipanema! Nossa pousada é o
+                ponto de partida ideal para conhecer.
+              </p>
+            </article>
+            <article>
+              <img src="assets/hotel2.jpg" alt="" />
+              <div class="flex-title">
+                <h1>Ipanema</h1>
+                <p class="state">RJ</p>
+              </div>
+              <p>
+                Explore a rica cultura e história de Ipanema! Nossa pousada é o
+                ponto de partida ideal para conhecer.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="flex-main">
+        <div class="grid-main">
+          <div class="flex-main-text">
+            <h1>
+              Venha conferir os melhores <span id="hotel">hoteis</span> <br />
+              com as melhores <span id="promotion">promoções</span> do país
+            </h1>
+            <p>
+              <span id="no-time"> Não perca tempo </span> e venha conferir o que
+              há de <br />
+              <span id="best">melhor</span> na hotelagem brasileira
+            </p>
+          </div>
+          <img id="travel" src="/assets/travel.png" alt="" />
+        </div>
+      </section>
+      <section class="flex-main-final">
+        <div class="grid-main-final">
+            <h2>Fale com um de nossos acessores</h2>
+            <div class="p-flex">
+              <p>hospedagens@contato.com.br</p>
+              <p>(11) 0800-707-0707</p>
+            </div>
+          
+        </div>
+      </section>
+    </main>
+    <footer class="flex-footer">
+      <img src="/assets/logo-preta.png" alt="" />
+    </footer>
+  </body>
+  <script src="./Script.js"></script>
+</html>
