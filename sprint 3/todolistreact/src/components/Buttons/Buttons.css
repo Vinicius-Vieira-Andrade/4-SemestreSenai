@@ -8,3 +8,26 @@
     background-color: transparent;
     margin-top: 10px;
 }
+
+.cancel {
+    height: 30px;
+    width: 30px;
+}
+
+.edit {
+    height: 30px;
+    width: 30px;
+}
+
+
+@media screen and (max-width: 376px) {
+    .cancel {
+        height: 25px;
+        width: 25px;
+    }
+
+    .edit {
+        height: 25px;
+        width: 25px;
+    }
+}

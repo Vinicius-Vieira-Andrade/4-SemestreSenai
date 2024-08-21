@@ -17,4 +17,3 @@ export function InputCheck() {
         <input type="checkbox" className="check-input" />
     );
 }
-

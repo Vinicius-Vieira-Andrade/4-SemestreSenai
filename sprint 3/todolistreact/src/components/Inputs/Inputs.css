@@ -16,3 +16,24 @@
     padding-right: 0px;
     gap: 0px;
 }
+
+.check-input {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(189, 164, 255, 1);
+    border-radius: 3px;
+}
+
+
+
+.check-input:checked {
+    background-color: #1E123B;
+}
+
+@media screen and (max-width: 376px) {
+    .check-input {
+        width: 20px;
+        height: 20px;
+    }
+}
