@@ -23,6 +23,7 @@ export function CheckList({ tasks, onUpdate, onDelete, onChange }) {
                     <div className="container-input-desc">
 
                         <input
+                            style={{width: "20px"}}
                             type="checkbox"
                             checked={task.toDo}
                             onChange={() => onChange(index)}
