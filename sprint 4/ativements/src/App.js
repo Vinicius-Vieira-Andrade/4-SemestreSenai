@@ -11,10 +11,10 @@ function App() {
 
   return (
     <main className="flex flex-row h-screen">
-      <section className='flex flex-col items-center justify-center bg-atvGradient w-[50%] absolute h-screen left-[50%]'>
-        <Title styles='text-complementary-white'>Bem vindo ao <img className='mt-3' src={logoMarca} alt='Ativements'/></Title>
+      <section className={`md:flex flex-col items-center justify-center bg-atvGradient w-[50%] absolute h-screen left-[50%] transition-all duration-500 sm:flex ${left}`}>
+        <Title styles='text-complementary-white'>Bem vindo ao <img className='sm:h-7 sm:ml-[20%] md:ml-[0px] sm:w-[60%] md:w-auto md:h-auto mt-3' src={logoMarca} alt='Ativements'/></Title>
 
-        <Paragraph styles="text-complementary-white mt-[60px]">
+        <Paragraph styles="ml-[0] text-complementary-white mt-[60px]">
         A plataforma eficiente para gerenciar e acompanhar todos os recursos da escola SENAI Informática
         </Paragraph>
       </section>

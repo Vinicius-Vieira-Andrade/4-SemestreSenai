@@ -6,7 +6,7 @@ import { FormAccess } from "../../components/forms";
 import { octokit } from "../../../src/utils/githubKey"
 import { v4 as uuid } from "uuid"
 
-const Register = (onLinking) => {
+const Register = ({onLinking}) => {
     const [load, setLoad] = useState(false);
     const [message, setMessage] = useState("");
     const [userAccess, setUserAccess] = useState("");
@@ -22,6 +22,8 @@ const Register = (onLinking) => {
                 'X-GitHub-Api-Version': "2022-11-28"
             }
         }).then(async response => {
+            console.log("respo");
+            console.log(response);
             const verify = (await checkUserExists());
 
             if (!verify) {
@@ -49,8 +51,8 @@ const Register = (onLinking) => {
                 return false
 
             }).catch(() => {
-                alert('nao foi possivel encontrar o usuario!')
-                // setMessage('Não foi possível encontrar o usuário')
+                // alert('nao foi possivel encontrar o usuario!')
+                setMessage('Não foi possível encontrar o usuário')
             })
     }
 
@@ -79,7 +81,7 @@ const Register = (onLinking) => {
 
 
     return (
-        <section className="flex flex-col items-center justify-center gap-8">
+        <section className="flex flex-col items-center justify-center md:gap-8 sm:gap-3">
             <Title>Registrar-se na plataforma</Title>
 
             <Paragraph>Para criar uma conta, informe a url de acesso ao seu perfil da plataforma do Github</Paragraph>
@@ -89,7 +91,7 @@ const Register = (onLinking) => {
 
             <TextError>{message}</TextError>
 
-            <Paragraph>Já possui registro? <ButtonLink>Acessar aqui</ButtonLink> </Paragraph>
+            <Paragraph>Já possui registro? <ButtonLink onClick={onLinking}>Acessar aqui</ButtonLink> </Paragraph>
         </section>
     )
 }
