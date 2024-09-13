@@ -13,7 +13,7 @@ export const Button = ({ styles, children, load }) => {
 }
 
 export const ButtonTransparent = ({ children, styles, onClick }) => {
-    return <button onClick={onClick} className={`flex justify-center items-center border rounded py-2 px-4 ${styles}`}>{children}</button>;
+    return <button onClick={onClick} type="button" className={`flex justify-center items-center border rounded py-2 px-4 ${styles}`}>{children}</button>;
 }
 
 export const ButtonLink = ({ children, onClick }) => {

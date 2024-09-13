@@ -23,8 +23,55 @@ export const FormAtivement = ({ list, setList, places, setPlaces, update }) => {
         local: ''
     });
 
+
+    const clearInputs = () => {
+        setAtivement({ numero: "", nome: "", local: "" })
+    }
+
+
+    const updateAtivement = async () => {
+        try {
+            const localId = await findLocal(ativement.local)
+
+            const data = {
+                ...ativement,
+                local: localId,
+                dataAtualizacao: new Date().toLocaleString(),
+                usuarioAlteracao: user.id
+            }
+
+            fetch("http://localhost:3000/ativos/" + ativement.id, {
+                method: "PUT",
+                body: JSON.stringify(data)
+            })
+
+            //  Atuailzar o ativo na lista de ativos
+
+            setList(list.map(item => item.id === ativement.id ? data : item))
+
+        } catch {
+            alert('Não foi possível atualizar o ativo.')
+        }
+    }
+
+
     const validateData = async (e) => {
         e.preventDefault();
+
+
+        const validateNumberAtivement = () => {
+            fetch('http://localhost:3000/ativos?numero=' + ativement.numero)
+                .then(response => response.json())
+                .then(response => {
+                    if (response[0]) { //se retornar um ativo com o número informado, não pode cadastra-lo
+                        return true;
+                    }
+                    return false;
+                })
+                .catch(() => {
+                    return true;
+                })
+        }
 
         //  procurar a existência de um ativo com a numeracao destacada
         const numerationInUse = await validateNumberAtivement();
@@ -39,7 +86,7 @@ export const FormAtivement = ({ list, setList, places, setPlaces, update }) => {
             alert('Número do ativo é muito curto.')
         }
 
-        //  verificar se os campos estao preeenchidos corretamente  
+        //  verificar se os campos estao preeenchidos corretamente
         else if (ativement.nome.trim() == "" || ativement.nome.trim() == "") {
             alert('Campos não preenchidos corretamente')
         }
@@ -49,22 +96,13 @@ export const FormAtivement = ({ list, setList, places, setPlaces, update }) => {
             alert('Numero do ativo ja utilizado, informe outra numeracao.')
         }
 
-        else{
-            createAtivement();
-        }
-
-        const validateNumberAtivement = () => {
-            fetch('http://localhost:3000/ativos?numero=' + ativement.numero)
-                .then(response => response.json())
-                .then(response => {
-                    if (response[0]) { //se retornar um ativo com o número informado, não pode cadastra-lo
-                        return true;
-                    }
-                    return false;
-                })
-                .catch(() => {
-                    return true;
-                })
+        else {
+            if (!ativement.id) {
+                createAtivement(e);
+            }
+            else {
+                updateAtivement();
+            }
         }
     }
 
@@ -134,11 +172,17 @@ export const FormAtivement = ({ list, setList, places, setPlaces, update }) => {
     }
 
     useEffect(() => {
-        setAtivement(update)
+        const local = places.filter(item => item.id == update.local)
+
+
+        if (local[0]) {
+            setAtivement({ ...update, local: local[0].nome })
+
+        }
     }, [update])
 
     return (
-        <form onSubmit={createAtivement} className="bg-[#D9D3F6] w-full py-5 px-10 mt-2 rounded flex justify-around items-end shadow-md 
+        <form onSubmit={validateData} className="bg-[#D9D3F6] w-full py-5 px-10 mt-2 rounded flex justify-around items-end shadow-md 
         max-md:flex-col max-md:items-center max-md:h-[450px]">
             <Input disabled={!!ativement.id} type='number' styles="w-[20%] max-md:w-[80%]" id="numeroativo" value={ativement.numero} onChange={e => setAtivement({ ...ativement, numero: e.target.value })}>Número do ativo</Input>
 
@@ -146,8 +190,11 @@ export const FormAtivement = ({ list, setList, places, setPlaces, update }) => {
 
             <Select places={places} styles="w-[20%] max-md:w-[80%]" id="localativo" value={ativement.local} onChange={e => setAtivement({ ...ativement, local: e.target.value })}>Local do ativo</Select>
 
-            <ButtonTransparent styles="w-[15%] text-primary-blue border-primary-blue max-md:w-[60%] max-md:m-2">Limpar campos</ButtonTransparent>
+            <ButtonTransparent onClick={clearInputs} styles="w-[15%] text-primary-blue border-primary-blue max-md:w-[60%] max-md:m-2">Limpar campos</ButtonTransparent>
             <Button styles="w-[15%] max-md:w-[60%] max-md:w-[60%]">Inserir ativo</Button>
         </form>
     );
 }
+
+
+

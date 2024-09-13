@@ -54,7 +54,7 @@ export const Table = ({ list, setUpdate, setList }) => {
                                     <td className="py-5 px-10 text-left flex gap-5">
                                         <ButtonTransparent onClick={e => getAtivements(item)} styles="border-none py-0 px-0 text-[#009e9e]">Editar ativo</ButtonTransparent>
 
-                                        <ButtonTransparent onClick={e => removeAtivements(item)} styles="border-none py-0 px-0 text-primary-red">{ item.status ? "Excluir" : "Inserir"} ativo</ButtonTransparent>
+                                        <ButtonTransparent onClick={e => removeAtivements(item)} styles="border-none py-0 px-0 text-primary-red">{ item.status ? "Inserir" : "Excluir"} ativo</ButtonTransparent>
                                     </td>
                                 </tr>
                             );
