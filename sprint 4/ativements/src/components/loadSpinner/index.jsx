@@ -1,12 +1,16 @@
-import { Puff } from "react-loader-spinner"
+import { TailSpin } from "react-loader-spinner";
 
-export const LoadindSpinner = () => {
+export const LoadSpinner = () => {
     return (
-        <Puff
-        visible={true}
-        height={20}
-        width={20}
-        color="white"
+        <TailSpin
+            visible={true}
+            height="20"
+            width="20"
+            color="#fafafa"
+            ariaLabel="tail-spin-loading"
+            radius="1"
+            wrapperStyle={{}}
+            wrapperClass=""
         />
-    )
+    );
 }

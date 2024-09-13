@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router'
 
 import { Paragraph, TextError, Title } from '../../Components/Texts'
 import { ButtonLink } from '../../Components/Button'
@@ -8,24 +9,26 @@ const Login = ({ onLinking }) => {
   const [load, setLoad] = useState(false);
   const [message, setMessage] = useState("");
   const [userAccess, setUserAccess] = useState("");
+  const navigate = useNavigate();
 
   const verifyAccess = (e) => {
     e.preventDefault();
 
     setLoad(true)
-    fetch(`http://localhost:3000/usuarios?login=${userAccess.toLowerCase()}`)
-    .then( response => response.json() )
-    .then( response => {
-      if(response[0]){
-        alert("Usuário logado");
+    // fetch(`http://localhost:3000/usuarios?login=${userAccess.toLowerCase()}`)
+    // .then( response => response.json() )
+    // .then( response => {
+    //   if(response[0]){
+    //     alert("Usuário logado");
 
-      }else{
-        setMessage("Usuário não encontrado, tente novamente");
-      }
-    })
-    .catch( () => {
-      setMessage("Não foi possível efetuar o login, teste sua conexão com a internet")
-    })
+    //   }else{
+    //     setMessage("Usuário não encontrado, tente novamente");
+    //   }
+    // })
+    // .catch( () => {
+    //   setMessage("Não foi possível efetuar o login, teste sua conexão com a internet")
+    // })
+    navigate("/painel-ativos")
 
     setLoad(false)
     setUserAccess("")

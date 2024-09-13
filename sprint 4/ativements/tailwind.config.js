@@ -1,33 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{jsx,js,tsx,ts}", "./index.html"],
+  content: ["./src/**/*.{jsx,js}", "./index.html"],
   theme: {
-    fontFamily:{
-      sans: [ "Lato", "sans-serif"]
+    fontFamily: {
+      sans: ["Lato", "sans-serif"]
     },
-
-    extend: {
+    extend: { // Cores do projeto
       colors: {
-        primary :{
+        // Separação de tipos de cores
+        primary: {
           blue: "#005ca7",
           purple: "#4c30c4",
-          red: "#BF0000"
+          red: "#bf0000"
         },
-
         complementary: {
-          white: "#F3F5F9",
+          white: "#f3f5f9",
           black: "#272727",
-          gray: "#33303E"
+          gray: "#33303e"
         }
-
-      
       },
-      backgroundImage: {
-        atvGradient: 
-          "linear-gradient(149deg, #2272b5 -10.8%, #005195 37.95%, #004582 100%)"
-        
-      }
     },
+
+    // Formatação de imagem
+    backgroundImage: {
+      atvGradient: "linear-gradient(149deg, #2272b5 -10.8%, #005195 37.9%, #004582 100%)"
+    }
   },
   plugins: [],
 }
+

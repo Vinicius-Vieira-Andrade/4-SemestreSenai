@@ -22,5 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-./src/utils
-/src/utils
+# omitindo a chave de acesso da api
+/src/Utils
+*storybook.log

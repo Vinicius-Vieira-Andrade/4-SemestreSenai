@@ -11,3 +11,7 @@ export const Button = (props) => {
 export const ButtonLink = (props) => {
   return <button type="button" onClick={props.onClick} className="p-1 underline text-[#372097] font-medium">{props.children}</button>
 }
+
+export const ButtonTransparent = (props) => {
+  return <button onClick={props.onClick} className={`flex justify-center items-center border rounded py-2 px-4 ${props.styles}`}>{props.children}</button>
+}

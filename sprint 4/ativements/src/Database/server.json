@@ -1,7 +1,49 @@
 {
-    "locais": [{"id" : 1,
-    "nome" : "sala 19"
-    }],
-    "ativos": [],
-    "usuarios": []
+  "locais": [
+    {
+      "id": "b72f6bba-7ebf-4f92-b1a2-dbba94050c03",
+      "nome": "ArenaCyber"
+    }
+  ],
+  "ativos": [
+    {
+      "id": "b263c56d-f546-41da-89b2-57313cd6b67b",
+      "nome": "viniciu",
+      "numero": "234",
+      "local": "b72f6bba-7ebf-4f92-b1a2-dbba94050c03",
+      "dataRegistro": "12/09/2024, 10:25:06",
+      "user_id": "5a772e70-7b75-476c-bab2-0cd04a333c7f",
+      "status": true
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "8807766e-744c-4b8d-8ac1-e5609d131247",
+      "login": "lucasbo7",
+      "imagem": "https://avatars.githubusercontent.com/u/87036915?v=4",
+      "lastAccess": "11/09/2024, 14:39:35"
+    },
+    {
+      "id": "acd1c3e8-8749-4048-9dba-9ea4038d9d39",
+      "login": "dsa",
+      "imagem": "https://avatars.githubusercontent.com/u/79051?v=4"
+    },
+    {
+      "id": "e4e43ee2-777c-4c61-9730-3a53535b2579",
+      "login": "vinicius-vieira-andrade",
+      "imagem": "https://avatars.githubusercontent.com/u/125310030?v=4",
+      "lastAccess": "12/09/2024, 08:58:52"
+    },
+    {
+      "id": "4a1182be-56d6-456b-a00a-f100bfff7116",
+      "login": "vini",
+      "imagem": "https://avatars.githubusercontent.com/u/78046?v=4",
+      "lastAccess": "12/09/2024, 10:15:13"
+    },
+    {
+      "id": "5a772e70-7b75-476c-bab2-0cd04a333c7f",
+      "login": "aaa",
+      "imagem": "https://avatars.githubusercontent.com/u/1704?v=4"
+    }
+  ]
 }
